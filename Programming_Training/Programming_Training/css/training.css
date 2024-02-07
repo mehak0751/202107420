@@ -1,0 +1,94 @@
+/* Team Section Styles */
+.team_section {
+  padding: 50px 0; /* Add padding for better spacing */
+}
+
+.heading_container {
+  margin-bottom: 30px; /* Add margin bottom for spacing */
+}
+
+.heading_container h2 {
+  font-size: 36px; /* Adjust font size */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+
+.heading_container p {
+  font-size: 18px; /* Adjust font size */
+  color: #666; /* Set text color */
+}
+
+.row {
+  display: flex; /* Use flexbox for card layout */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.col-md-4 {
+  flex: 0 0 33.33%; /* Set column width for medium screens */
+  max-width: 33.33%; /* Set maximum width for medium screens */
+  padding: 0 15px; /* Add padding for spacing between cards */
+}
+
+.box {
+  background-color: #f9f9f9; /* Set background color for cards */
+  padding: 20px; /* Add padding inside cards */
+  margin-bottom: 30px; /* Add margin bottom for spacing */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  transition: transform 0.5s ease-in-out; /* Add transition for animation */
+}
+
+.box:hover {
+  transform: translateX(10px); /* Animate cards from left to right on hover */
+}
+
+.img-box img {
+  width: 100%; /* Make images fill their containers */
+  border-radius: 5px; /* Add border radius for rounded image corners */
+}
+
+.detail-box {
+  text-align: center; /* Center align text */
+}
+
+.detail-box h5 {
+  font-size: 24px; /* Adjust font size */
+  margin-bottom: 5px; /* Add margin bottom for spacing */
+}
+
+.detail-box h6 {
+  font-size: 18px; /* Adjust font size */
+  color: #666; /* Set text color */
+}
+
+.btn-box {
+  text-align: center; /* Center align button */
+  margin-top: 30px; /* Add margin top for spacing */
+}
+
+.btn-box a {
+  padding: 10px 30px; /* Add padding for button */
+  background-color: #0056b3; /* Set button background color */
+  color: #fff; /* Set button text color */
+  text-decoration: none; /* Remove default link underline */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.btn-box a:hover {
+  background-color: #004080; /* Change button background color on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 50%; /* Set column width for small screens */
+    max-width: 50%; /* Set maximum width for small screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%; /* Set column width for extra small screens */
+    max-width: 100%; /* Set maximum width for extra small screens */
+  }
+}
